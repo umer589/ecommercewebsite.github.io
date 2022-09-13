@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --hover: orangered;
+    --bg-primary: blue;
+    --font: 'Poppins', sans-serif;
+
+
+    --text-black: black;
+    --text-white:white;
+
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    font-family: var(--font);
+    color: var(--text-black)
+}
+
+nav {
+    background-color: rgb(247, 247, 247);
+}
+
+nav {
+    box-shadow: 0 0.25rem 0.8rem rgb(0 0 0 / 5%);
+    z-index: 2;
+
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--hover);
+}
+
+.ti-align-justify {
+    height: unset;
+    width: unset;
+
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.btn-danger {
+    background-color: var(--hover);
+    border: none;
+}
+
+.home-banner-1,
+.home-banner-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    
+
+}
+
+.home-banner-1 {
+    background-image: url(../images/slide1.jpg);
+    background-position: 90% center;
+}
+
+.home-banner-2 {
+    background-image: url(../images/slide2.jpg);
+    
+}
+
+.home-text {
+    position: absolute;
+    top: 25%;
+    left: 16%;
+    transform: translate(-110%, -50%) font-family: var(--font);
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 500;
+
+
+}
+
+.home-text h2 {
+    font-size: 3rem;
+    font-style: italic;
+
+
+}
+
+#slider .carousel-indicators [data-bs-target] {
+    background-color: var(--hover);
+    height: 0.313rem;
+    width: 2.5rem;
+
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: transparent;
+}
+
+.slider-icon {
+    font-size: 3rem;
+    color: var(--hover);
+}
+
+.products .box .row a {
+    text-decoration: none;
+}
+.products .box .row{
+    padding-top: 8.75rem;
+}
+
+.products .box .row a .offer-box .offer-overlay::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 50%;
+    z-index: 1;
+}
+.products .box .row a .offer-box .offer-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+.products .box .row a .offer-box .offer-info  .offer-title-1{
+    font-size: 3.5rem;
+    line-height: 1;
+    color: var(--text-white);
+
+}
+.products .box .row a .offer-box .offer-info  .offer-title-2{
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--text-white);
+    letter-spacing: 5px;
+
+}
+.products .box .row a .offer-box .offer-info .btn-outline-danger{
+    color: var(--text-white);
+    border-color: var(--text-white);
+}
+.products .box .up:hover{
+    position: relative;
+    bottom: 15px;
+    
+
+}
+.products .box .bottom:hover{
+    position: relative;
+    top: 15px;
+    
+
+}
+.product-list a {
+text-decoration: none;
+color: var(--text-black);
+}
+.product-list .heading h2{
+    padding-top: 8.375rem  
+    
+}
+
+
+
+.product-list .heading{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-list .heading .line{ 
+    margin-bottom: 4rem;
+    height: 0.5rem;
+    width: 13%;
+    background-color: var(--hover);
+}
+
+.product-list .product-image img{
+    transition: all 500ms ease-in-out;
+
+
+}
+
+.product-list .products-items .product-image .secondary-image{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.product-list .product-image:hover .secondary-image{
+    opacity: 1;
+    
+}
+.product-list .sale{
+    position: absolute;
+    left: 20%;
+    padding: 0px 4px 0px 4px;
+    background-color: var(--hover);
+    color: var(--text-white);
+    border-radius: 6px;
+}
+.space{
+    margin-top: 7rem;
+}
+.ADD-to-Cart{
+    background-color: var(--hover);
+    color: var(--text-white);
+    border-radius: 3px;
+    border: none;
+    padding: 2px;
+}
+.zoom-image{
+    padding: 8.5rem;
+    position: relative;
+}
+.zoom-image .lg-text h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--text-white);
+    font-weight: bold;
+    
+
+}
